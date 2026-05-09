@@ -15,3 +15,33 @@ pip install numpy
 pip install six
 # 在您的 Conda 環境中安裝 headless 版本（不含 GUI 介面，體積較小）
 pip install opencv-python-headless
+pip install wasmtime
+
+
+
+# on linux 指令
+conda create -n makentu python=3.11 -y
+
+sudo apt update
+sudo apt install libasound2-dev portaudio19-dev flac -y
+
+# 確保你在 makentu 環境下
+conda activate makentu
+
+# 更新 pip
+python -m pip install --upgrade pip
+
+# 安裝核心套件
+# 注意：PyAudio 必須在裝完上面的 portaudio19-dev 後再裝
+python -m pip install numpy
+python -m pip install pyaudio
+python -m pip install speechrecognition
+python -m pip install edge-impulse-linux
+
+# 檢查 PyAudio 是否能正常 import
+python -c "import pyaudio; print('✅ PyAudio 成功'); import speech_recognition as sr; print('✅ SpeechRecognition 成功')"
+
+python -m pip install six
+python -m pip install "opencv-python>=4.5.1.48,<5"
+
+chmod +x x86_model.eim
