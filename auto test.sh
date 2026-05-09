@@ -1,6 +1,4 @@
-# 喚醒詞
-要跑喚醒詞，在linux環境下執行以下程式
-```
+#!/bin/bash
 cd 喚醒詞
 
 # # 安裝系統底層套件
@@ -12,4 +10,3 @@ pip install edge-impulse-linux speech_recognition
 
 # 執行程式
 python 喚醒詞gemini-code-1778250289583.py
-```
