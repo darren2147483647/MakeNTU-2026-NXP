@@ -1,0 +1,17 @@
+sudo apt install libasound2-dev python3-pyaudio flac ffmpeg
+pip install edge_impulse_linux speech_recognition
+
+# 測試用(test)
+# 建立專屬環境
+conda create -n ei_stt_win python=3.9
+conda activate ei_stt_win
+
+# 在 Windows 上，透過 conda 安裝 pyaudio 最為穩定，可避免編譯錯誤
+conda install -c conda-forge pyaudio
+pip install edge-impulse-linux
+# 請嘗試使用此指令（建議在您的 Python 3.9 Conda 環境中）
+pip install SpeechRecognition
+pip install numpy
+pip install six
+# 在您的 Conda 環境中安裝 headless 版本（不含 GUI 介面，體積較小）
+pip install opencv-python-headless
