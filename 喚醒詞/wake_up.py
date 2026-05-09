@@ -14,7 +14,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 model_file = os.path.join(current_dir, "model.eim")
 
 # --- 修改後的 Getter 函數 ---
-def get_last_detection_status():
+def getter():
     """
     回傳自上次呼叫此函數以來偵測到的最大數值：
     - 若期間偵測到 '沒事' 或 '取消'，回傳 2 (最高優先級)

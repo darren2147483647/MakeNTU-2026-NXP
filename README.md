@@ -1,8 +1,8 @@
 # 喚醒詞
-要跑喚醒詞，在linux環境下執行以下程式
+要跑喚醒詞，在linux環境下執行以下程式(含CONDA ENV配置)
 ```
 # 路徑
-cd 喚醒詞
+cd 喚醒詞 # 或對應資料夾名
 
 # 環境
 conda create -n makentu python=3.11 -y
@@ -30,5 +30,6 @@ chmod +x x86_model.eim
 chmod +x model.eim
 
 # 執行程式
-python 喚醒詞gemini-code-1778250289583.py
+python wake_up.py
 ```
+getter叫getter
