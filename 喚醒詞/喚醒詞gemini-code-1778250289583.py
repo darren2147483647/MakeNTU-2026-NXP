@@ -11,7 +11,6 @@ import speech_recognition as sr
 # pip install edge-impulse-linux speech_recognition
 
 # 如果沒有eim
-# pip install edge-impulse-linux
 # edge-impulse-linux-runner --download my_model.eim
 
 # 1. 載入模型路徑
